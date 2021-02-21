@@ -7,9 +7,10 @@ import { AddTransaction } from './component/AddTransaction';
 import { Balance } from './component/Balance';
 import { Header } from './component/Header'
 import { TransactionHistory } from './component/TransactionHistory';
-
+import {configNotification} from './firebase';
 
 function App() {
+  configNotification()
   return (
     <GlobalProvider>
         <Header></Header>
